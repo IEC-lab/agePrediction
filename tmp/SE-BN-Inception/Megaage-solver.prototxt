@@ -1,0 +1,17 @@
+train_net: "tmp/Megaage-train.prototxt"
+test_net: "tmp/Megaage-test.prototxt"
+test_iter: 186
+test_interval: 2000
+base_lr: 0.00500000007451
+display: 100
+max_iter: 80000
+lr_policy: "multistep"
+gamma: 0.5
+momentum: 0.899999976158
+stepvalue:20000
+stepvalue:50000
+stepvalue:70000
+snapshot: 2000
+snapshot_prefix: "model/Megaage"
+test_initialization: true
+type: "SGD"
